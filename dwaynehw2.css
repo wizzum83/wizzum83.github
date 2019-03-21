@@ -1,0 +1,51 @@
+body { background-color:yellow; }
+
+h1 { color: red; text-align:center; }      
+
+p::first-letter { font-size: 2.45em; font-style: italic; font-weight: bold; }
+
+.red { color:red; } 
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue
+}
+
+
+h2 { text-align: right; color: blue; font-style: italic; }
+
+#exercise { text-align: right; color: blue; font-size: 1.8em; font-style: italic; }
+
+#myBanner {
+  position: relative;
+  top: 0px; 
+  left: 0px; 
+  width: 150px;
+
+  animation-name: banner;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes banner {
+  from { left: 0px; }
+    to { left: calc(100% - 150px); }
+}
+
+table, td, th {
+  animation-name: table;  
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 20px;
+}
+
+@keyframes table {
+     0% { background-color:cyan; color:black; }
+   100% { background-color:green; color:white; }
+}
